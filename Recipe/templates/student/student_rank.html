@@ -1,0 +1,15 @@
+<h1>Student Rankings</h1>
+<table>
+    <tr>
+        <th>Rank</th>
+        <th>Student Name</th>
+        <th>Total Marks</th>
+    </tr>
+    {% for entry in ranked_students %}
+    <tr>
+        <td>{{ entry.rank }}</td>
+        <td>{{ entry.student.student_name }}</td>
+        <td>{{ entry.total_marks }}</td>
+    </tr>
+    {% endfor %}
+</table>
